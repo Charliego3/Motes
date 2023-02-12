@@ -17,6 +17,7 @@
 		CB5966F42997F9C700378ED2 /* TrashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB5966F22997F9C700378ED2 /* TrashViewController.xib */; };
 		CB5966F72997F9F700378ED2 /* AllNotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5966F52997F9F700378ED2 /* AllNotesViewController.swift */; };
 		CB5966F82997F9F700378ED2 /* AllNotesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB5966F62997F9F700378ED2 /* AllNotesViewController.xib */; };
+		CB5966FC2998BB2600378ED2 /* SeparatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5966FB2998BB2600378ED2 /* SeparatorView.swift */; };
 		CBB94EA029910BEB00FF0F8B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB94E9F29910BEB00FF0F8B /* AppDelegate.swift */; };
 		CBB94EA529910BEB00FF0F8B /* Motes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CBB94EA329910BEB00FF0F8B /* Motes.xcdatamodeld */; };
 		CBB94EA729910BEC00FF0F8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBB94EA629910BEC00FF0F8B /* Assets.xcassets */; };
@@ -40,6 +41,7 @@
 		CB5966F22997F9C700378ED2 /* TrashViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrashViewController.xib; sourceTree = "<group>"; };
 		CB5966F52997F9F700378ED2 /* AllNotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllNotesViewController.swift; sourceTree = "<group>"; };
 		CB5966F62997F9F700378ED2 /* AllNotesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AllNotesViewController.xib; sourceTree = "<group>"; };
+		CB5966FB2998BB2600378ED2 /* SeparatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeparatorView.swift; sourceTree = "<group>"; };
 		CBB94E9C29910BEB00FF0F8B /* Motes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Motes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBB94E9F29910BEB00FF0F8B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CBB94EA429910BEB00FF0F8B /* Motes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Motes.xcdatamodel; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 				CB5966F22997F9C700378ED2 /* TrashViewController.xib */,
 				CB5966F52997F9F700378ED2 /* AllNotesViewController.swift */,
 				CB5966F62997F9F700378ED2 /* AllNotesViewController.xib */,
+				CB5966FB2998BB2600378ED2 /* SeparatorView.swift */,
 			);
 			path = Motes;
 			sourceTree = "<group>";
@@ -187,6 +190,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB5966FC2998BB2600378ED2 /* SeparatorView.swift in Sources */,
 				CBB94EBB2991510B00FF0F8B /* SidebarViewController.swift in Sources */,
 				CB5966EF2997F99C00378ED2 /* RecentsViewController.swift in Sources */,
 				CB5966F72997F9F700378ED2 /* AllNotesViewController.swift in Sources */,

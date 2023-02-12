@@ -5,6 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="21507"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="NSView safe area layout guides" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -674,7 +675,7 @@
         <scene sceneID="z8g-rk-dJ6">
             <objects>
                 <windowController id="diO-Pv-TlK" customClass="WindowController" customModule="Motes" customModuleProvider="target" sceneMemberID="viewController">
-                    <window key="window" title="Window" separatorStyle="line" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" tabbingMode="disallowed" toolbarStyle="compact" id="fdg-5S-Z3n">
+                    <window key="window" title="Window" separatorStyle="none" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" tabbingMode="disallowed" toolbarStyle="compact" id="fdg-5S-Z3n">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES" fullSizeContentView="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="245" y="301" width="608" height="410"/>
@@ -743,8 +744,8 @@
         <scene sceneID="03N-w3-u88">
             <objects>
                 <viewController id="pJM-D6-0OQ" customClass="SidebarViewController" customModule="Motes" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" misplaced="YES" id="FZX-mX-rlu">
-                        <rect key="frame" x="0.0" y="0.0" width="241" height="300"/>
+                    <view key="view" id="FZX-mX-rlu">
+                        <rect key="frame" x="0.0" y="0.0" width="242" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <segmentedControl verticalHuggingPriority="750" tag="1" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MIo-vM-CI8">
@@ -781,21 +782,45 @@
                                 </constraints>
                                 <font key="font" metaFont="system"/>
                             </tabView>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="Mc5-UB-O6b">
+                                <rect key="frame" x="0.0" y="258" width="242" height="42"/>
+                                <subviews>
+                                    <box boxType="custom" borderType="none" borderWidth="0.0" title="Box" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="rZR-od-EMI">
+                                        <rect key="frame" x="0.0" y="3" width="242" height="1"/>
+                                        <view key="contentView" id="fNm-N9-PtK">
+                                            <rect key="frame" x="0.0" y="0.0" width="242" height="1"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        </view>
+                                        <color key="fillColor" name="Separator"/>
+                                    </box>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="rZR-od-EMI" secondAttribute="bottom" constant="3" id="H3S-oq-ZqU"/>
+                                    <constraint firstItem="rZR-od-EMI" firstAttribute="top" secondItem="Mc5-UB-O6b" secondAttribute="top" constant="38" id="VmO-tn-cCM"/>
+                                    <constraint firstAttribute="trailing" secondItem="rZR-od-EMI" secondAttribute="trailing" id="ZHn-tZ-0QD"/>
+                                    <constraint firstItem="rZR-od-EMI" firstAttribute="leading" secondItem="Mc5-UB-O6b" secondAttribute="leading" id="yZh-C0-ent"/>
+                                </constraints>
+                            </customView>
                         </subviews>
                         <constraints>
+                            <constraint firstItem="Mc5-UB-O6b" firstAttribute="top" secondItem="FZX-mX-rlu" secondAttribute="top" id="3zn-iV-Z4r"/>
                             <constraint firstItem="MIo-vM-CI8" firstAttribute="top" secondItem="FZX-mX-rlu" secondAttribute="top" constant="42" id="SJc-gu-R44"/>
                             <constraint firstItem="aeP-Kh-7VW" firstAttribute="top" secondItem="6VZ-hG-sac" secondAttribute="top" constant="5" id="XRl-eb-gLH"/>
+                            <constraint firstItem="Mc5-UB-O6b" firstAttribute="leading" secondItem="FZX-mX-rlu" secondAttribute="leading" id="fM0-d9-wKF"/>
                             <constraint firstAttribute="trailing" secondItem="aeP-Kh-7VW" secondAttribute="trailing" id="iK6-Rx-imy"/>
                             <constraint firstItem="aeP-Kh-7VW" firstAttribute="bottom" secondItem="h3w-SD-9ws" secondAttribute="bottom" id="k8n-2w-tda"/>
                             <constraint firstItem="aeP-Kh-7VW" firstAttribute="leading" secondItem="FZX-mX-rlu" secondAttribute="leading" id="lPa-ig-o1m"/>
+                            <constraint firstAttribute="trailing" secondItem="Mc5-UB-O6b" secondAttribute="trailing" id="nxQ-S5-teN"/>
                             <constraint firstItem="6VZ-hG-sac" firstAttribute="trailing" secondItem="MIo-vM-CI8" secondAttribute="trailing" id="p9Q-X5-Hxc"/>
                             <constraint firstItem="MIo-vM-CI8" firstAttribute="leading" secondItem="6VZ-hG-sac" secondAttribute="leading" id="tnn-nI-Xyh"/>
+                            <constraint firstItem="MIo-vM-CI8" firstAttribute="top" secondItem="Mc5-UB-O6b" secondAttribute="bottom" id="x8c-gS-oSJ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="h3w-SD-9ws"/>
                         <viewLayoutGuide key="layoutMargins" id="6VZ-hG-sac"/>
                     </view>
                     <connections>
                         <outlet property="segments" destination="MIo-vM-CI8" id="SJc-3N-mUj"/>
+                        <outlet property="sparator" destination="Mc5-UB-O6b" id="P3N-sV-hgW"/>
                         <outlet property="tabview" destination="aeP-Kh-7VW" id="bd8-vd-Jiw"/>
                     </connections>
                 </viewController>
@@ -826,5 +851,8 @@
         <image name="sidebar.leading" catalog="system" width="24" height="18"/>
         <image name="star" catalog="system" width="17" height="16"/>
         <image name="trash" catalog="system" width="15" height="17"/>
+        <namedColor name="Separator">
+            <color red="0.67100000381469727" green="0.67100000381469727" blue="0.67100000381469727" alpha="0.5" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
     </resources>
 </document>
