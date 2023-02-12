@@ -1,0 +1,17 @@
+//
+//  TrashViewController.swift
+//  Motes
+//
+//  Created by Charlie on 2023/2/12.
+//
+
+import Cocoa
+
+class TrashViewController: NSViewController {
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do view setup here.
+    }
+    
+}

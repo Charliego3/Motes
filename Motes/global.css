@@ -1,0 +1,59 @@
+:root {
+  --background-color: transparent;
+  --light-active-line-background: #E2F2FF;
+  --light-active-line-color: #232426;
+  --light-inactive-line-color: #A6A6A6;
+  --dark-active-line-background: #303239;
+  --dark-inactive-line-color: #747478;
+  --dark-active-line-color: #E0E0E1;
+  --min-gutter-width: 35px;
+  color-scheme: light dark;
+}
+
+body {
+  height: 100vh;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.cm-editor {
+  background-color: var(--background-color);
+}
+.cm-editor .cm-gutters {
+  background-color: var(--background-color);
+  border-right: 0;
+}
+.cm-editor .cm-gutters .cm-lineNumbers {
+  min-width: var(--min-gutter-width);
+}
+
+@media (prefers-color-scheme: light) {
+  .cm-editor .cm-gutters {
+    color: var(--light-inactive-line-color);
+  }
+  .cm-editor .cm-gutters .cm-activeLineGutter {
+    background-color: var(--light-active-line-background);
+    color: var(--light-active-line-color);
+  }
+  .cm-editor .cm-content .cm-activeLine {
+    background-color: var(--light-active-line-background);
+  }
+  .cm-editor .cm-layer .cm-cursor {
+    border-left: 2px solid var(--light-active-line-color);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  .cm-editor .cm-gutters {
+    color: var(--dark-inactive-line-color);
+  }
+  .cm-editor .cm-gutters .cm-activeLineGutter {
+    background-color: var(--dark-active-line-background);
+    color: var(--dark-active-line-color);
+  }
+  .cm-editor .cm-content .cm-activeLine {
+    background-color: var(--dark-active-line-background);
+  }
+  .cm-editor .cm-layer .cm-cursor {
+    border-left: 2px solid var(--dark-active-line-color);
+  }
+}/*# sourceMappingURL=global.css.map */
