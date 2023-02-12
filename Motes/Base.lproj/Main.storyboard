@@ -5,7 +5,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="21507"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="NSView safe area layout guides" minToolsVersion="12.0"/>
-        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -775,52 +774,42 @@
                                 </connections>
                             </segmentedControl>
                             <tabView drawsBackground="NO" allowsTruncatedLabels="NO" type="noTabsNoBorder" translatesAutoresizingMaskIntoConstraints="NO" id="aeP-Kh-7VW">
-                                <rect key="frame" x="0.0" y="0.0" width="242" height="223"/>
+                                <rect key="frame" x="0.0" y="0.0" width="242" height="220"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="242" id="2FX-Az-ex5"/>
                                     <constraint firstAttribute="width" relation="lessThanOrEqual" constant="1000" id="Fzc-3U-30V"/>
                                 </constraints>
                                 <font key="font" metaFont="system"/>
                             </tabView>
-                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="Mc5-UB-O6b">
-                                <rect key="frame" x="0.0" y="258" width="242" height="42"/>
-                                <subviews>
-                                    <box boxType="custom" borderType="none" borderWidth="0.0" title="Box" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="rZR-od-EMI">
-                                        <rect key="frame" x="0.0" y="3" width="242" height="1"/>
-                                        <view key="contentView" id="fNm-N9-PtK">
-                                            <rect key="frame" x="0.0" y="0.0" width="242" height="1"/>
-                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                        </view>
-                                        <color key="fillColor" name="Separator"/>
-                                    </box>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="rZR-od-EMI" secondAttribute="bottom" constant="3" id="H3S-oq-ZqU"/>
-                                    <constraint firstItem="rZR-od-EMI" firstAttribute="top" secondItem="Mc5-UB-O6b" secondAttribute="top" constant="38" id="VmO-tn-cCM"/>
-                                    <constraint firstAttribute="trailing" secondItem="rZR-od-EMI" secondAttribute="trailing" id="ZHn-tZ-0QD"/>
-                                    <constraint firstItem="rZR-od-EMI" firstAttribute="leading" secondItem="Mc5-UB-O6b" secondAttribute="leading" id="yZh-C0-ent"/>
-                                </constraints>
-                            </customView>
+                            <box verticalHuggingPriority="750" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="EJb-6E-5vU">
+                                <rect key="frame" x="0.0" y="259" width="242" height="5"/>
+                            </box>
+                            <box verticalHuggingPriority="750" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="aa4-m2-etX">
+                                <rect key="frame" x="0.0" y="217" width="242" height="5"/>
+                            </box>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="Mc5-UB-O6b" firstAttribute="top" secondItem="FZX-mX-rlu" secondAttribute="top" id="3zn-iV-Z4r"/>
+                            <constraint firstAttribute="trailing" secondItem="EJb-6E-5vU" secondAttribute="trailing" id="5Ft-kS-e9Q"/>
+                            <constraint firstAttribute="trailing" secondItem="aa4-m2-etX" secondAttribute="trailing" id="8sk-bW-7lq"/>
+                            <constraint firstItem="aa4-m2-etX" firstAttribute="leading" secondItem="FZX-mX-rlu" secondAttribute="leading" id="EJb-dP-LIr"/>
+                            <constraint firstItem="EJb-6E-5vU" firstAttribute="top" secondItem="FZX-mX-rlu" secondAttribute="top" constant="38" id="FbT-rJ-mGE"/>
                             <constraint firstItem="MIo-vM-CI8" firstAttribute="top" secondItem="FZX-mX-rlu" secondAttribute="top" constant="42" id="SJc-gu-R44"/>
-                            <constraint firstItem="aeP-Kh-7VW" firstAttribute="top" secondItem="6VZ-hG-sac" secondAttribute="top" constant="5" id="XRl-eb-gLH"/>
-                            <constraint firstItem="Mc5-UB-O6b" firstAttribute="leading" secondItem="FZX-mX-rlu" secondAttribute="leading" id="fM0-d9-wKF"/>
+                            <constraint firstItem="aa4-m2-etX" firstAttribute="top" secondItem="6VZ-hG-sac" secondAttribute="top" constant="8" id="WS8-e1-m85"/>
+                            <constraint firstItem="aa4-m2-etX" firstAttribute="leading" secondItem="FZX-mX-rlu" secondAttribute="leading" id="XwK-fJ-w1M"/>
                             <constraint firstAttribute="trailing" secondItem="aeP-Kh-7VW" secondAttribute="trailing" id="iK6-Rx-imy"/>
                             <constraint firstItem="aeP-Kh-7VW" firstAttribute="bottom" secondItem="h3w-SD-9ws" secondAttribute="bottom" id="k8n-2w-tda"/>
                             <constraint firstItem="aeP-Kh-7VW" firstAttribute="leading" secondItem="FZX-mX-rlu" secondAttribute="leading" id="lPa-ig-o1m"/>
-                            <constraint firstAttribute="trailing" secondItem="Mc5-UB-O6b" secondAttribute="trailing" id="nxQ-S5-teN"/>
                             <constraint firstItem="6VZ-hG-sac" firstAttribute="trailing" secondItem="MIo-vM-CI8" secondAttribute="trailing" id="p9Q-X5-Hxc"/>
+                            <constraint firstAttribute="trailing" secondItem="aa4-m2-etX" secondAttribute="trailing" id="rSW-DF-jH7"/>
                             <constraint firstItem="MIo-vM-CI8" firstAttribute="leading" secondItem="6VZ-hG-sac" secondAttribute="leading" id="tnn-nI-Xyh"/>
-                            <constraint firstItem="MIo-vM-CI8" firstAttribute="top" secondItem="Mc5-UB-O6b" secondAttribute="bottom" id="x8c-gS-oSJ"/>
+                            <constraint firstItem="aeP-Kh-7VW" firstAttribute="top" secondItem="6VZ-hG-sac" secondAttribute="top" constant="8" id="usE-O6-tJc"/>
+                            <constraint firstItem="EJb-6E-5vU" firstAttribute="leading" secondItem="FZX-mX-rlu" secondAttribute="leading" id="yaZ-Gx-ELc"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="h3w-SD-9ws"/>
                         <viewLayoutGuide key="layoutMargins" id="6VZ-hG-sac"/>
                     </view>
                     <connections>
                         <outlet property="segments" destination="MIo-vM-CI8" id="SJc-3N-mUj"/>
-                        <outlet property="sparator" destination="Mc5-UB-O6b" id="P3N-sV-hgW"/>
                         <outlet property="tabview" destination="aeP-Kh-7VW" id="bd8-vd-Jiw"/>
                     </connections>
                 </viewController>
@@ -836,6 +825,16 @@
                     <view key="view" id="eRw-MW-bpg">
                         <rect key="frame" x="0.0" y="0.0" width="348" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <box verticalHuggingPriority="750" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="48l-TZ-zLu">
+                                <rect key="frame" x="0.0" y="297" width="348" height="5"/>
+                            </box>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="48l-TZ-zLu" secondAttribute="trailing" id="5TS-pb-lfm"/>
+                            <constraint firstItem="48l-TZ-zLu" firstAttribute="top" secondItem="eRw-MW-bpg" secondAttribute="top" id="Ldz-UL-P9a"/>
+                            <constraint firstItem="48l-TZ-zLu" firstAttribute="leading" secondItem="eRw-MW-bpg" secondAttribute="leading" id="PKe-XH-okg"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="bt9-VT-EFa"/>
                         <viewLayoutGuide key="layoutMargins" id="op6-ch-igO"/>
                     </view>
@@ -851,8 +850,5 @@
         <image name="sidebar.leading" catalog="system" width="24" height="18"/>
         <image name="star" catalog="system" width="17" height="16"/>
         <image name="trash" catalog="system" width="15" height="17"/>
-        <namedColor name="Separator">
-            <color red="0.67100000381469727" green="0.67100000381469727" blue="0.67100000381469727" alpha="0.5" colorSpace="custom" customColorSpace="displayP3"/>
-        </namedColor>
     </resources>
 </document>
