@@ -9,12 +9,49 @@ import Cocoa
 
 @main
 class AppDelegate: NSObject, NSApplicationDelegate {
-
-    @IBOutlet var window: NSWindow!
-
-
+    
+//    override init() {
+//        UserDefaults.standard.removePersistentDomain(forName: Bundle.main.bundleIdentifier!)
+//    }
+    
+    var windowController = MainWindowController()
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        // Insert code here to initialize your application
+        guard let project = Defaults.projectURL else {
+            let panel = NSOpenPanel()
+            panel.canChooseDirectories = true
+            panel.canChooseFiles = true
+            panel.canDownloadUbiquitousContents = true
+            panel.allowsMultipleSelection = false
+            panel.allowsOtherFileTypes = false
+            panel.allowedContentTypes = [.directory]
+            panel.beginSheetModal(for: windowController.window!) { resp in
+                if resp == .OK {
+                    guard let url = panel.url else {
+                        NSApplication.shared.terminate(nil)
+                        return
+                    }
+                    MarkdownModel.shared.initializeFiles(url: url)
+                    self.openProject()
+                    Defaults.projectURL = url
+                } else {
+                    Utils.warningTerminate(message: "You did not select the root directory folder, you can reopen the app to set")
+                }
+            }
+            return
+        }
+        MarkdownModel.shared.initializeFiles(url: project)
+        self.openProject()
+    }
+    
+    func openProject() {
+        DispatchQueue.main.async { [weak self] in
+            let outlineView = self?.windowController.sidebarViewController.notesViewController.outlineView
+            outlineView?.reloadData()
+            if MarkdownModel.shared.markdowns.count > 0 {
+                outlineView?.selectRowIndexes(.init(arrayLiteral: 0), byExtendingSelection: true)
+            }
+        }
+        windowController.showWindow(nil)
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {

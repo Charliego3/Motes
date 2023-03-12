@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="21507" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="21507"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="MainWindowController" customModule="Motes" customModuleProvider="target">
+            <connections>
+                <outlet property="window" destination="F0z-JX-Cv5" id="gIp-Ho-8D9"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="Motes" separatorStyle="shadow" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" tabbingMode="disallowed" titlebarAppearsTransparent="YES" toolbarStyle="compact" id="F0z-JX-Cv5">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES" fullSizeContentView="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="196" y="240" width="785" height="600"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1025"/>
+            <view key="contentView" id="se5-gp-TjO">
+                <rect key="frame" x="0.0" y="0.0" width="785" height="600"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            </view>
+            <toolbar key="toolbar" implicitIdentifier="5BF70934-F3FE-4D1B-B924-F6820A2EEC88" displayMode="iconAndLabel" sizeMode="regular" id="DsS-Og-upo">
+                <allowedToolbarItems>
+                    <toolbarItem implicitItemIdentifier="NSToolbarSpaceItem" id="omQ-Aq-McJ"/>
+                    <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="ZC0-BY-XUr"/>
+                    <toolbarItem implicitItemIdentifier="6AF7B925-A48E-4F46-83D6-5ED5DE911AD9" explicitItemIdentifier="NSToolbarToggleSidebarItemIdentifier" label="Sidebar" paletteLabel="Sidebar" tag="-1" bordered="YES" sizingBehavior="auto" id="Iug-By-fXN">
+                        <imageReference key="image" image="sidebar.leading" catalog="system" symbolScale="large" renderingMode="original"/>
+                        <connections>
+                            <action selector="toggleSidebar:" target="-2" id="pOg-lF-1bI"/>
+                        </connections>
+                    </toolbarItem>
+                    <toolbarItem implicitItemIdentifier="D8F144F2-59EB-4E09-B98C-724D070313E5" explicitItemIdentifier="NSToolbarSidebarTrackingSeparatorItemIdentifier" label="Tracking" paletteLabel="Tracking" tag="-1" bordered="YES" sizingBehavior="auto" id="V3f-5D-TXs"/>
+                </allowedToolbarItems>
+                <defaultToolbarItems>
+                    <toolbarItem reference="Iug-By-fXN"/>
+                    <toolbarItem reference="V3f-5D-TXs"/>
+                    <toolbarItem reference="ZC0-BY-XUr"/>
+                </defaultToolbarItems>
+                <connections>
+                    <outlet property="delegate" destination="-2" id="bm9-Hp-7oB"/>
+                </connections>
+            </toolbar>
+            <connections>
+                <outlet property="delegate" destination="-2" id="0bl-1N-AYu"/>
+            </connections>
+            <point key="canvasLocation" x="174.5" y="341"/>
+        </window>
+    </objects>
+    <resources>
+        <image name="sidebar.leading" catalog="system" width="24" height="18"/>
+    </resources>
+</document>

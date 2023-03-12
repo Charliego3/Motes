@@ -11,6 +11,30 @@
 		CBBADDA4299A873800A05308 /* Motes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CBBADDA2299A873800A05308 /* Motes.xcdatamodeld */; };
 		CBBADDA6299A873900A05308 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBBADDA5299A873900A05308 /* Assets.xcassets */; };
 		CBBADDA9299A873900A05308 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBBADDA7299A873900A05308 /* MainMenu.xib */; };
+		CBBADDB6299A88AF00A05308 /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBADDB4299A88AF00A05308 /* MainWindowController.swift */; };
+		CBBADDB7299A88AF00A05308 /* MainWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBBADDB5299A88AF00A05308 /* MainWindowController.xib */; };
+		CBBADDBC299A8D9300A05308 /* SidebarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBADDBA299A8D9300A05308 /* SidebarViewController.swift */; };
+		CBBADDBD299A8D9300A05308 /* SidebarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBBADDBB299A8D9300A05308 /* SidebarViewController.xib */; };
+		CBBADDC4299A975E00A05308 /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBADDC2299A975E00A05308 /* NotesViewController.swift */; };
+		CBBADDC5299A975E00A05308 /* NotesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBBADDC3299A975E00A05308 /* NotesViewController.xib */; };
+		CBBADDC8299A981500A05308 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBADDC6299A981500A05308 /* FavoritesViewController.swift */; };
+		CBBADDC9299A981500A05308 /* FavoritesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBBADDC7299A981500A05308 /* FavoritesViewController.xib */; };
+		CBBADDCC299A984200A05308 /* RecentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBADDCA299A984200A05308 /* RecentsViewController.swift */; };
+		CBBADDCD299A984200A05308 /* RecentsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBBADDCB299A984200A05308 /* RecentsViewController.xib */; };
+		CBBADDD0299A986A00A05308 /* TrashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBADDCE299A986A00A05308 /* TrashViewController.swift */; };
+		CBBADDD1299A986A00A05308 /* TrashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBBADDCF299A986A00A05308 /* TrashViewController.xib */; };
+		CBBADDD4299A988A00A05308 /* AllNotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBADDD2299A988A00A05308 /* AllNotesViewController.swift */; };
+		CBBADDD5299A988A00A05308 /* AllNotesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBBADDD3299A988A00A05308 /* AllNotesViewController.xib */; };
+		CBBADDD7299CB6E100A05308 /* Markdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBADDD6299CB6E100A05308 /* Markdown.swift */; };
+		CBBADDD9299CF75400A05308 /* OutlineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBADDD8299CF75400A05308 /* OutlineView.swift */; };
+		CBBADDDB299D1D0400A05308 /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBADDDA299D1D0400A05308 /* Defaults.swift */; };
+		CBC2C8B529BC6AEF00ECC182 /* STTextView in Frameworks */ = {isa = PBXBuildFile; productRef = CBC2C8B429BC6AEF00ECC182 /* STTextView */; };
+		CBC2C8B829BC700F00ECC182 /* TextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC2C8B629BC700F00ECC182 /* TextViewController.swift */; };
+		CBC2C8B929BC700F00ECC182 /* TextViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBC2C8B729BC700F00ECC182 /* TextViewController.xib */; };
+		CBC2C8BB29BC7D3800ECC182 /* Bookmarks.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC2C8BA29BC7D3800ECC182 /* Bookmarks.swift */; };
+		CBC2C8BE29BCBDEE00ECC182 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC2C8BD29BCBDEE00ECC182 /* Utils.swift */; };
+		CBC2C8C029BCC23000ECC182 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CBC2C8BF29BCC23000ECC182 /* Info.plist */; };
+		CBC2C8C229BDAD3700ECC182 /* bookmarks in Resources */ = {isa = PBXBuildFile; fileRef = CBC2C8C129BDAD3700ECC182 /* bookmarks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +44,29 @@
 		CBBADDA5299A873900A05308 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CBBADDA8299A873900A05308 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		CBBADDAA299A873900A05308 /* Motes.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Motes.entitlements; sourceTree = "<group>"; };
+		CBBADDB4299A88AF00A05308 /* MainWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
+		CBBADDB5299A88AF00A05308 /* MainWindowController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindowController.xib; sourceTree = "<group>"; };
+		CBBADDBA299A8D9300A05308 /* SidebarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarViewController.swift; sourceTree = "<group>"; };
+		CBBADDBB299A8D9300A05308 /* SidebarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SidebarViewController.xib; sourceTree = "<group>"; };
+		CBBADDC2299A975E00A05308 /* NotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
+		CBBADDC3299A975E00A05308 /* NotesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotesViewController.xib; sourceTree = "<group>"; };
+		CBBADDC6299A981500A05308 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		CBBADDC7299A981500A05308 /* FavoritesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoritesViewController.xib; sourceTree = "<group>"; };
+		CBBADDCA299A984200A05308 /* RecentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentsViewController.swift; sourceTree = "<group>"; };
+		CBBADDCB299A984200A05308 /* RecentsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecentsViewController.xib; sourceTree = "<group>"; };
+		CBBADDCE299A986A00A05308 /* TrashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrashViewController.swift; sourceTree = "<group>"; };
+		CBBADDCF299A986A00A05308 /* TrashViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrashViewController.xib; sourceTree = "<group>"; };
+		CBBADDD2299A988A00A05308 /* AllNotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllNotesViewController.swift; sourceTree = "<group>"; };
+		CBBADDD3299A988A00A05308 /* AllNotesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AllNotesViewController.xib; sourceTree = "<group>"; };
+		CBBADDD6299CB6E100A05308 /* Markdown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Markdown.swift; sourceTree = "<group>"; };
+		CBBADDD8299CF75400A05308 /* OutlineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutlineView.swift; sourceTree = "<group>"; };
+		CBBADDDA299D1D0400A05308 /* Defaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Defaults.swift; sourceTree = "<group>"; };
+		CBC2C8B629BC700F00ECC182 /* TextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewController.swift; sourceTree = "<group>"; };
+		CBC2C8B729BC700F00ECC182 /* TextViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextViewController.xib; sourceTree = "<group>"; };
+		CBC2C8BA29BC7D3800ECC182 /* Bookmarks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bookmarks.swift; sourceTree = "<group>"; };
+		CBC2C8BD29BCBDEE00ECC182 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		CBC2C8BF29BCC23000ECC182 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBC2C8C129BDAD3700ECC182 /* bookmarks */ = {isa = PBXFileReference; lastKnownFileType = text; path = bookmarks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBC2C8B529BC6AEF00ECC182 /* STTextView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,11 +100,34 @@
 		CBBADD9F299A873800A05308 /* Motes */ = {
 			isa = PBXGroup;
 			children = (
+				CBC2C8BF29BCC23000ECC182 /* Info.plist */,
 				CBBADDA0299A873800A05308 /* AppDelegate.swift */,
 				CBBADDA5299A873900A05308 /* Assets.xcassets */,
 				CBBADDA7299A873900A05308 /* MainMenu.xib */,
 				CBBADDAA299A873900A05308 /* Motes.entitlements */,
 				CBBADDA2299A873800A05308 /* Motes.xcdatamodeld */,
+				CBBADDB4299A88AF00A05308 /* MainWindowController.swift */,
+				CBBADDB5299A88AF00A05308 /* MainWindowController.xib */,
+				CBBADDBA299A8D9300A05308 /* SidebarViewController.swift */,
+				CBBADDBB299A8D9300A05308 /* SidebarViewController.xib */,
+				CBBADDC2299A975E00A05308 /* NotesViewController.swift */,
+				CBBADDC3299A975E00A05308 /* NotesViewController.xib */,
+				CBBADDC6299A981500A05308 /* FavoritesViewController.swift */,
+				CBBADDC7299A981500A05308 /* FavoritesViewController.xib */,
+				CBBADDCA299A984200A05308 /* RecentsViewController.swift */,
+				CBBADDCB299A984200A05308 /* RecentsViewController.xib */,
+				CBBADDCE299A986A00A05308 /* TrashViewController.swift */,
+				CBBADDCF299A986A00A05308 /* TrashViewController.xib */,
+				CBBADDD2299A988A00A05308 /* AllNotesViewController.swift */,
+				CBBADDD3299A988A00A05308 /* AllNotesViewController.xib */,
+				CBBADDD6299CB6E100A05308 /* Markdown.swift */,
+				CBBADDD8299CF75400A05308 /* OutlineView.swift */,
+				CBBADDDA299D1D0400A05308 /* Defaults.swift */,
+				CBC2C8B629BC700F00ECC182 /* TextViewController.swift */,
+				CBC2C8B729BC700F00ECC182 /* TextViewController.xib */,
+				CBC2C8BA29BC7D3800ECC182 /* Bookmarks.swift */,
+				CBC2C8BD29BCBDEE00ECC182 /* Utils.swift */,
+				CBC2C8C129BDAD3700ECC182 /* bookmarks */,
 			);
 			path = Motes;
 			sourceTree = "<group>";
@@ -77,6 +148,9 @@
 			dependencies = (
 			);
 			name = Motes;
+			packageProductDependencies = (
+				CBC2C8B429BC6AEF00ECC182 /* STTextView */,
+			);
 			productName = Motes;
 			productReference = CBBADD9D299A873800A05308 /* Motes.app */;
 			productType = "com.apple.product-type.application";
@@ -105,6 +179,9 @@
 				Base,
 			);
 			mainGroup = CBBADD94299A873800A05308;
+			packageReferences = (
+				CBC2C8B329BC6AEF00ECC182 /* XCRemoteSwiftPackageReference "STTextView" */,
+			);
 			productRefGroup = CBBADD9E299A873800A05308 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -120,7 +197,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				CBBADDA6299A873900A05308 /* Assets.xcassets in Resources */,
+				CBC2C8C229BDAD3700ECC182 /* bookmarks in Resources */,
+				CBBADDB7299A88AF00A05308 /* MainWindowController.xib in Resources */,
+				CBBADDC5299A975E00A05308 /* NotesViewController.xib in Resources */,
+				CBC2C8B929BC700F00ECC182 /* TextViewController.xib in Resources */,
 				CBBADDA9299A873900A05308 /* MainMenu.xib in Resources */,
+				CBBADDC9299A981500A05308 /* FavoritesViewController.xib in Resources */,
+				CBBADDD1299A986A00A05308 /* TrashViewController.xib in Resources */,
+				CBBADDD5299A988A00A05308 /* AllNotesViewController.xib in Resources */,
+				CBC2C8C029BCC23000ECC182 /* Info.plist in Resources */,
+				CBBADDCD299A984200A05308 /* RecentsViewController.xib in Resources */,
+				CBBADDBD299A8D9300A05308 /* SidebarViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,8 +218,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBBADDBC299A8D9300A05308 /* SidebarViewController.swift in Sources */,
+				CBBADDDB299D1D0400A05308 /* Defaults.swift in Sources */,
+				CBBADDCC299A984200A05308 /* RecentsViewController.swift in Sources */,
+				CBBADDD4299A988A00A05308 /* AllNotesViewController.swift in Sources */,
+				CBBADDD9299CF75400A05308 /* OutlineView.swift in Sources */,
+				CBC2C8BB29BC7D3800ECC182 /* Bookmarks.swift in Sources */,
+				CBC2C8B829BC700F00ECC182 /* TextViewController.swift in Sources */,
+				CBC2C8BE29BCBDEE00ECC182 /* Utils.swift in Sources */,
+				CBBADDD0299A986A00A05308 /* TrashViewController.swift in Sources */,
+				CBBADDC8299A981500A05308 /* FavoritesViewController.swift in Sources */,
+				CBBADDC4299A975E00A05308 /* NotesViewController.swift in Sources */,
 				CBBADDA4299A873800A05308 /* Motes.xcdatamodeld in Sources */,
 				CBBADDA1299A873800A05308 /* AppDelegate.swift in Sources */,
+				CBBADDB6299A88AF00A05308 /* MainWindowController.swift in Sources */,
+				CBBADDD7299CB6E100A05308 /* Markdown.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +375,9 @@
 				DEVELOPMENT_TEAM = 28TMRFWBQ3;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Motes/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Motes;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainNibFile = MainMenu;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
@@ -302,6 +405,9 @@
 				DEVELOPMENT_TEAM = 28TMRFWBQ3;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Motes/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Motes;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainNibFile = MainMenu;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
@@ -339,6 +445,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CBC2C8B329BC6AEF00ECC182 /* XCRemoteSwiftPackageReference "STTextView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/krzyzanowskim/STTextView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.4.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CBC2C8B429BC6AEF00ECC182 /* STTextView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CBC2C8B329BC6AEF00ECC182 /* XCRemoteSwiftPackageReference "STTextView" */;
+			productName = STTextView;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		CBBADDA2299A873800A05308 /* Motes.xcdatamodeld */ = {

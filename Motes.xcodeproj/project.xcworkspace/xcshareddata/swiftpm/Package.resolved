@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "sttextview",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/krzyzanowskim/STTextView.git",
+      "state" : {
+        "revision" : "d6bec568df43028352c4062215fc3b5fab07c2d2",
+        "version" : "0.4.3"
+      }
+    }
+  ],
+  "version" : 2
+}
